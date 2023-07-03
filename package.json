@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/YevhenBez/goit-nodejs-module-1/issues"
   },
-  "homepage": "https://github.com/YevhenBez/goit-nodejs-module-1#readme"
+  "homepage": "https://github.com/YevhenBez/goit-nodejs-module-1#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
 }
