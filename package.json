@@ -21,7 +21,8 @@
   "homepage": "https://github.com/YevhenBez/goit-nodejs-module-1#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
