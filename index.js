@@ -10,6 +10,7 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
         case "get":
             const oneContact = await contacts.getContactById(id);
             return console.log(oneContact);
+        case "add":
     }
 }
 
