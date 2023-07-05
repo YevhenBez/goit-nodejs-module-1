@@ -29,8 +29,21 @@ const addContact = async (data) => {
     return newContact;
 }
 
+const removeContact = async (id) => {
+    const contactId = String(id);
+    const contactsAll = await listContacts();
+    const index = contactsAll.findIndex(item => item.id === contactId);
+    if (index === -1) {
+        return null;
+    }
+    const [result] = contactsAll.splice(index, 1);
+    await fs.writeFile(contactsPath, JSON.stringify(contactsAll, null, 2));
+    return result
+}
+
 module.exports = {
     listContacts,
     getContactById,
-    addContact
+    addContact,
+    removeContact
 }
